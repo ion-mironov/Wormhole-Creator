@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wormhole Creator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="gravity_drive-gif">
+            <img src="gravity_drive_animated.gif" alt="gravity_drive_animated" id="wormhole-btn">
+        </div>
+
+        <div class="game-area">
+            <h1>Wormhole Creator</h1>
+
+			<div class="dropdown">
+				<button class="dropdown-btn">Info</button>
+				<div class="dropdown-content">
+					<p>Wormhole Creator is a click-based game that allows you to create wormholes and purchase upgrades such as auto clickers and multipliers.</p>
+				</div>
+			</div>
+
+            <div class="resources">
+                <p>Wormholes: <span class="wormhole-display" id="wormhole-count">0</span></p>
+				<p>Auto Clickers: <span id="wormhole-auto-clicker-count">0</span></p>
+				<p>Multipliers: <span id="wormhole-multiplier-count">0</span></p>
+				<p>Multiplier Power: <span id="wormhole-multiplier-power">1.0</span>x</p>
+            </div>
+
+            <div class="upgrades">
+                <button id="wormhole-auto-clicker-btn">Buy Wormhole Auto Clicker</button>
+				<button id="wormhole-multiplier-btn">Buy Wormhole Multiplier</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
