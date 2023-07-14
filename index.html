@@ -2,44 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wormhole Creator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wormhole Creator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="gravity_drive-gif">
-            <img src="gravity_drive_animated.gif" alt="gravity_drive_animated" id="wormhole-btn">
-        </div>
+	<div class="container">
+		<div class="gravity_drive-gif">
+			<img src="gravity_drive_animated.gif" alt="gravity_drive_animated" id="wormhole-btn">
+		</div>
 
-        <div class="game-area">
-            <h1>Wormhole Creator</h1>
+		<div class="game-area">
+			<h1 id="title">Wormhole Creator</h1>
+			<audio id="sound" src="soundclip.mp3"></audio>
+			<div class="resources">
+				<p>Wormholes: <span class="wormhole-display" id="wormhole-count">0</span></p>
+				<p>Auto Clickers: <span id="wormhole-auto-clicker-count">0</span></p>
+				<p>Multipliers: <span id="wormhole-multiplier-count">0</span></p>
+				<p>Multiplier Power: <span id="wormhole-multiplier-power">1.0</span>x</p>
+			</div>
+
+			<div class="upgrades">
+				<button id="wormhole-auto-clicker-btn">Buy Wormhole Auto Clicker</button>
+				<button id="wormhole-multiplier-btn">Buy Wormhole Multiplier</button>
+			</div>
 
 			<div class="dropdown">
 				<button class="dropdown-btn">Info</button>
 				<div class="dropdown-content">
 					<p>Wormhole Creator is a click-based game that allows you to create wormholes and purchase upgrades such as auto clickers and multipliers.</p>
+					<a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">The game that inspired it all!</a>
+					<a href="#" id="about-me-link">About Me</a>
+					<br>
 				</div>
 			</div>
 
-            <div class="resources">
-                <p>Wormholes: <span class="wormhole-display" id="wormhole-count">0</span></p>
-				<p>Auto Clickers: <span id="wormhole-auto-clicker-count">0</span></p>
-				<p>Multipliers: <span id="wormhole-multiplier-count">0</span></p>
-				<p>Multiplier Power: <span id="wormhole-multiplier-power">1.0</span>x</p>
-            </div>
+		</div>
+		<button id="reset-btn">Reset Game</button>
+	</div>
 
-            <div class="upgrades">
-                <button id="wormhole-auto-clicker-btn">Buy Wormhole Auto Clicker</button>
-				<button id="wormhole-multiplier-btn">Buy Wormhole Multiplier</button>
-            </div>
-        </div>
-
-    </div>
-    <script src="app.js"></script>
+	<!-- About Me Modal -->
+	<div id="aboutMeModal" class="modal">
+		<div class="modal-content">
+			<span class="close-btn">&times;</span>
+			<h2>About Me</h2>
+			<p>I am a full stack developer specializing in C#, Python, HTML, and CSS with a background of 15 years experience in the 
+			IT industry as a Senior Field Technician.</p>
+			<p>You can check my work on <a href="https://github.com/IonMironov-main/" target="_blank">GitHub</a>.<br>
+				<a href="https://linkedin.com/in/ionmironov/" target="_blank">My Indeed</a>
+			</p>
+		</div>
+	</div>
+	<script src="app.js"></script>
 </body>
 
 </html>
